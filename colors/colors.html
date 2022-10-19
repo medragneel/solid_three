@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="all">
+    <script src="https://kit.fontawesome.com/dffcb81fbc.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js" integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src='colors.js' defer></script>
+
+    <title>colors js</title>
+</head>
+
+<body>
+    <div class="colors h-75 ds-f j-s-between">
+        <div class="color ds-f d-col al-center align-center">
+            <h2>Hex</h2>
+            <div class="controls">
+                <button class="adjust"><i class='fas fa-sliders-h'></i></button>
+                <button class="lock"><i class='fas fa-lock-open'></i></button>
+            </div>
+            <div class="sliders">
+                <button class="close-adjustement">X</button>
+
+                <span>hue</span>
+
+                <input type="range" name='hue' id='hue' class='hue-input' min='0' max='360' step='1' data-hue='0'>
+
+                <span>brightness</span>
+
+                <input type="range" name='brightness' id='brightness' class='brightness-input' min='0' max='1'
+                    step='0.01' data-brightness='0'>
+
+                <span>saturation</span>
+
+                <input type="range" name='saturation' id='saturation' class='saturation-input' min='0' max='1'
+                    step='0.01' data-saturation='0'>
+
+            </div>
+        </div>
+        <!--  
+                (c{}+.color>h2{Hex}+(.controls>(button.adjust>i.fas.fa-sliders-h)+(button.lock>i.fas.fa-lock-open))+(.sliders>button.close-adjustement{X})+(span{hue}+input[type='range'][name='hue'][id='hue'][class='hue-input'][min='0'][max='360'][step='1'][data-hue=$])+(span{brightness}+input[type='range'][name='brightness'][id='brightness'][class='brightness-input'][min='0'][max='1'][step='0.01'][data-brightness=$])+(span{saturation}+input[type='range'][name='saturation'][id='saturation'][class='saturation-input'][min='0'][max='1'][step='0.01'][data-saturation=$]))*6
+            -->
+
+        <!--  -->
+        <div class="color ds-f d-col al-center align-center">
+            <h2>Hex</h2>
+            <div class="controls">
+                <button class="adjust"><i class="fas fa-sliders-h"></i></button>
+                <button class="lock"><i class="fas fa-lock-open"></i></button>
+            </div>
+            <div class="sliders">
+                <button class="close-adjustement">X</button>
+
+                <span>hue</span>
+
+                <input id="hue" class="hue-input" type="range" name="hue" min="0" max="360" step="1" data-hue="1">
+
+                <span>brightness</span>
+
+                <input id="brightness" class="brightness-input" type="range" name="brightness" min="0" max="1"
+                    step="0.01" data-brightness="1">
+
+                <span>saturation</span>
+
+                <input id="saturation" class="saturation-input" type="range" name="saturation" min="0" max="1"
+                    step="0.01" data-saturation="1">
+            </div>
+        </div>
+        <!--  -->
+        <div class="color ds-f d-col al-center  align-center">
+            <h2>Hex</h2>
+            <div class="controls">
+                <button class="adjust"><i class="fas fa-sliders-h"></i></button>
+                <button class="lock"><i class="fas fa-lock-open"></i></button>
+            </div>
+            <div class="sliders">
+                <button class="close-adjustement">X</button>
+
+                <span>hue</span>
+
+                <input id="hue" class="hue-input" type="range" name="hue" min="0" max="360" step="1" data-hue="2">
+
+                <span>brightness</span>
+
+                <input id="brightness" class="brightness-input" type="range" name="brightness" min="0" max="1"
+                    step="0.01" data-brightness="2">
+
+                <span>saturation</span>
+
+                <input id="saturation" class="saturation-input" type="range" name="saturation" min="0" max="1"
+                    step="0.01" data-saturation="2">
+            </div>
+        </div>
+        <!--  -->
+        <div class="color ds-f d-col al-center align-center">
+            <h2>Hex</h2>
+            <div class="controls">
+                <button class="adjust"><i class="fas fa-sliders-h"></i></button>
+                <button class="lock"><i class="fas fa-lock-open"></i></button>
+            </div>
+            <div class="sliders">
+                <button class="close-adjustement">X</button>
+
+                <span>hue</span>
+
+                <input id="hue" class="hue-input" type="range" name="hue" min="0" max="360" step="1" data-hue="3">
+
+                <span>brightness</span>
+
+
+                <input id="brightness" class="brightness-input" type="range" name="brightness" min="0" max="1"
+                    step="0.01" data-brightness="3">
+
+
+                <span>saturation</span>
+
+                <input id="saturation" class="saturation-input" type="range" name="saturation" min="0" max="1"
+                    step="0.01" data-saturation="3">
+            </div>
+        </div>
+        <!--  -->
+        <div class="color ds-f d-col al-center   align-center">
+            <h2>Hex</h2>
+            <div class="controls">
+                <button class="adjust"><i class="fas fa-sliders-h"></i></button>
+                <button class="lock"><i class="fas fa-lock-open"></i></button>
+            </div>
+            <div class="sliders">
+                <button class="close-adjustement">X</button>
+
+                <span>hue</span>
+
+                <input id="hue" class="hue-input" type="range" name="hue" min="0" max="360" step="1" data-hue="4">
+
+
+                <span>brightness</span>
+
+
+                <input id="brightness" class="brightness-input" type="range" name="brightness" min="0" max="1"
+                    step="0.01" data-brightness="4">
+
+
+                <span>saturation</span>
+
+
+                <input id="saturation" class="saturation-input" type="range" name="saturation" min="0" max="1"
+                    step="0.01" data-saturation="4">
+            </div>
+        </div>
+    </div>
+    <div class="panel ds-f al-center  j-s-around bg-light align-center h-25">
+        <div class="library-panel">
+            <button class='btn btn-dark'><i class='fas fa-book-open'></i></button>
+            <p>library</p>
+        </div>
+
+        <div class="genrate-panel">
+            <button class='generate btn btn-dark'><i class='fas fa-sync'></i></button>
+            <p>generate</p>
+        </div>
+
+        <div class="save-panel">
+            <button class='btn btn-dark'><i class='fas fa-save'></i></button>
+            <p>save</p>
+        </div>
+    </div>
+    <div class="copy-container">
+        <div class="copy-popup alert bg-light txt-success ds-f g-2">
+            <h3>Copied To The Clipboard!!!</h3>
+            <h4>📦</h4>
+        </div>
+
+    </div>
+
+
+
+    <div class="save-container">
+        <div class="save-popup">
+            <button class="close-save">X</button>
+            <h4>give a name toyour palette</h4>
+            <input class="save-name" type="text" max-length="35">
+
+
+            <button class="save-submit btn btn-dark">Save</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

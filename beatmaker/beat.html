@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css" media="all">
+    <title>🔥beat maker🔥</title>
+    <script src="beat.js" defer></script>
+    <script src="https://kit.fontawesome.com/dffcb81fbc.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    <h1 class='align-center p-2 mb-2'>Beat maker</h1>
+    <div class="container ds-f al-center j-center h-100 d-col g-3">
+        <div class="kick-track">
+            <div class="controls ds-f j-center al-center g-3">
+                <h1>Kick</h1>
+                <button class="mute kick-vol btn btn-light" data-track='0'>
+                    <i class="fa-solid fa-volume-xmark"></i>
+                </button>
+                <select name="kick-select" id='kick-select'>
+                    <option value="./allSounds/kick-808.wav">808 kick</option>
+                    <option value="./allSounds/kick-classic.wav">classic kick</option>
+                    <option value="./allSounds/kick-heavy.wav">heavy kick</option>
+                </select>
+                <div class="boxs ds-f j-center al-center g-1">
+                    <div class="box kick-pad b0 bg-danger-lighten-4"></div>
+                    <div class="box kick-pad b1 bg-danger-lighten-4"></div>
+                    <div class="box kick-pad b2 bg-danger-lighten-4"></div>
+                    <div class="box kick-pad b3 bg-danger-lighten-4"></div>
+                    <div class="box kick-pad b4 bg-danger-lighten-4"></div>
+                    <div class="box kick-pad b5 bg-danger-lighten-4"></div>
+                    <div class="box kick-pad b6 bg-danger-lighten-4"></div>
+                    <div class="box kick-pad b7 bg-danger-lighten-4"></div>
+                </div>
+            </div>
+        </div>
+        <!-- snare -->
+        <div class="snare-track">
+            <div class="controls ds-f j-center al-center g-3">
+                <h1>Snare</h1>
+                <button class="mute snare-vol btn btn-light" data-track='1'>
+                    <i class="fa-solid fa-volume-xmark"></i>
+                </button>
+                <select name="snare-select" id='snare-select'>
+                    <option value="./allSounds/snare-808.wav">808 snare</option>
+                    <option value="./allSounds/snare-acoustic01.wav">acoustic01 snare</option>
+                    <option value="./allSounds/snare-vinyl01.wav"> snare-vinyl01</option>
+                </select>
+                <div class="boxs ds-f j-center al-center g-1">
+                    <div class="box snare-pad b0 bg-primary-lighten-4"></div>
+                    <div class="box snare-pad b1 bg-primary-lighten-4"></div>
+                    <div class="box snare-pad b2 bg-primary-lighten-4"></div>
+                    <div class="box snare-pad b3 bg-primary-lighten-4"></div>
+                    <div class="box snare-pad b4 bg-primary-lighten-4"></div>
+                    <div class="box snare-pad b5 bg-primary-lighten-4"></div>
+                    <div class="box snare-pad b6 bg-primary-lighten-4"></div>
+                    <div class="box snare-pad b7 bg-primary-lighten-4"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!-- hihat -->
+            <div class="hihat-track">
+                <div class="controls ds-f j-center al-center g-3">
+                    <h1>Hihat</h1>
+                    <button class="mute hihat-vol btn btn-light" data-track='2'>
+                        <i class="fa-solid fa-volume-xmark"></i>
+                    </button>
+                    <select name="hihat-select" id='hihat-select'>
+                        <option value="./allSounds/hihat-808.wav">808 hihat</option>
+                        <option value="./allSounds/hihat-acoustic01.wav">acoustic01 hihat</option>
+                    </select>
+                    <div class="boxs ds-f j-center al-center g-1">
+                        <div class="box hihat-pad b0 bg-success-lighten-4"></div>
+                        <div class="box hihat-pad b1 bg-success-lighten-4"></div>
+                        <div class="box hihat-pad b2 bg-success-lighten-4"></div>
+                        <div class="box hihat-pad b3 bg-success-lighten-4"></div>
+                        <div class="box hihat-pad b4 bg-success-lighten-4"></div>
+                        <div class="box hihat-pad b5 bg-success-lighten-4"></div>
+                        <div class="box hihat-pad b6 bg-success-lighten-4"></div>
+                        <div class="box hihat-pad b7 bg-success-lighten-4"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container sounds my-4">
+                <center>
+                    <label for="tempo">Speed</label>
+                    <br>
+                    <input class='clr-accent-dark' id="tempo" min='0' max='250' type="range" name="tempo">
+                    <br>
+                    <button class='play btn btn-dark my-3 px-3'>Play</button>
+                    <audio class='kick-sound' src='./allSounds/kick-classic.wav'></audio>
+                    <audio class='snare-sound' src='./allSounds/snare-acoustic01.wav'></audio>
+                    <audio class='hihat-sound' src='./allSounds/hihat-acoustic01.wav'></audio>
+                </center>
+            </div>
+</body>
+
+</html>
